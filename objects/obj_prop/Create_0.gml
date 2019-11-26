@@ -1,0 +1,1 @@
+/// @description templated object that cannot be interacted with

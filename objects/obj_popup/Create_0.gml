@@ -1,0 +1,2 @@
+textToDraw = "";
+spriteToDraw = 0;
