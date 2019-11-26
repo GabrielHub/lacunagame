@@ -215,6 +215,14 @@
             }
         },
         {
+            "Key": "b40ffa60-a77b-4d5e-928e-adb67acb80fd",
+            "Value": {
+                "id": "3d3796a0-d63e-4842-8216-7ab098743374",
+                "resourcePath": "scripts\\PathLogic\\PathLogic.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "b4ceb3fe-db2f-4ae5-9db6-7617839cc3cd",
             "Value": {
                 "id": "f9e0fa66-eac0-4b18-a348-97a0be5fa82f",
@@ -260,6 +268,14 @@
                 "id": "63f97c9b-ed2d-41b0-9145-ba6e233e4f2c",
                 "resourcePath": "options\\mac\\options_mac.yy",
                 "resourceType": "GMMacOptions"
+            }
+        },
+        {
+            "Key": "f721fdc8-2cb8-4da2-a514-bbc589dfbc2d",
+            "Value": {
+                "id": "92643f67-55a9-4a5b-9c0c-aad426745ef7",
+                "resourcePath": "sprites\\spr_door\\spr_door.yy",
+                "resourceType": "GMSprite"
             }
         },
         {

@@ -6,7 +6,9 @@ var object = argument0;
 with (instance_create_depth(500, 500, -5, obj_popup)) {
 	textToDraw = object.dialog;
 	spriteToDraw = object.sprite;
+	isDoor = object.isDoor;
 }
+
 
 /*
 if (object.objectID == 0) {
