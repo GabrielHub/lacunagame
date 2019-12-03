@@ -18,10 +18,11 @@ if (room == rm_test) {
 		ds_list_add(storyOrder, 1);
 		
 		
+		
 		//create door first
-		var inst_receipt = instance_create_depth(920, 600, -1, obj_interactable)
-		ds_list_add(objectList, inst_receipt);
-		with (inst_receipt) {
+		var inst_door = instance_create_depth(920, 600, -1, obj_interactable)
+		ds_list_add(objectList, inst_door);
+		with (inst_door) {
 			objectID = 0;
 			dialog = "Press 'E' to rebuild memory.";
 			sprite = spr_door;
@@ -41,6 +42,13 @@ if (room == rm_test) {
 			sprite = spr_receipt;
 		}
 		
+		var inst_newspaper = instance_create_depth(712, 604, -1, obj_interactable)
+		ds_list_add(objectList, inst_newspaper);
+		with (inst_newspaper){
+			objectID = 2;
+			dialog = "Man walks in space";
+			sprite = spr_test;
+		}
 		
 	}
 }
