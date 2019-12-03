@@ -19,18 +19,20 @@ if (room == rm_test) {
 		
 		
 		//create door first
-		instance_create_depth(950, 675, -1, obj_prop);
-		var inst_receipt = instance_create_depth(950, 675, -1, obj_interactable)
+		var inst_receipt = instance_create_depth(920, 600, -1, obj_interactable)
 		ds_list_add(objectList, inst_receipt);
 		with (inst_receipt) {
 			objectID = 0;
 			dialog = "Press 'E' to rebuild memory.";
 			sprite = spr_door;
 			isDoor = true;
+			
+			//how to change sprite width and height do it here
+			image_xscale = 0.8;
+			image_yscale = 0.8;
 		}
 		
 		//receipt object
-		instance_create_depth(400, 400, -1, obj_prop);
 		var inst_receipt = instance_create_depth(400, 400, -1, obj_interactable)
 		ds_list_add(objectList, inst_receipt);
 		with (inst_receipt) {
