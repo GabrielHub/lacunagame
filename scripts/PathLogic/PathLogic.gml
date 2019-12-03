@@ -6,7 +6,6 @@
 var currentStoryID = argument0;
 var pathNumber = argument1;
 var pathType = argument2;
-var ret; //return value is the reponse text string
 
 //path type 0 means correct, path type 1 means wrong
 if (pathType == 0) {
@@ -19,6 +18,12 @@ else {
 	
 	//restart the story
 	currentStory = 0;
+	
+	//reduce time for the final room
+	if (GameManager.roomLoss <= GameManager.maxRoomLoss) {
+		finalLevelTime -= amtToLose;
+		GameManager.roomLoss += amtToLose;
+	}
 	
 	//Do effects
 }
