@@ -1,5 +1,8 @@
 GameManager.loadObjects = true;
 GameManager.roomLoss = 0;
+currentStory = 0;
+ds_list_clear(storyOrder);
+storyBook = ""; //might cause errors, eheck back here if you encounter errors in the next room
 
 //clear objects
 for (var i = 0; i < ds_list_size(GameManager.objectList); i++) {
