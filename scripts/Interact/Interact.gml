@@ -15,6 +15,6 @@ layer_background_index(back_id, 1);
 /*
 if (object.objectID == 0) {
 	with (instance_create_depth(500, 500, -5, obj_text)) {
-		textToDisplay = "object
+		textToDisplay = "object"
 	}
-}*/
+}/*
