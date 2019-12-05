@@ -191,6 +191,14 @@
             }
         },
         {
+            "Key": "9e0a8789-d4f3-487a-af5d-29ea3b64c1f3",
+            "Value": {
+                "id": "f5efb8fd-88da-4c4b-8b39-c99bb337a7d7",
+                "resourcePath": "sprites\\spr_news\\spr_news.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "9fbc9e54-d59e-4fe6-8710-9957d9ec07aa",
             "Value": {
                 "id": "7966ae16-2de6-40a6-94bf-f2335555ca76",

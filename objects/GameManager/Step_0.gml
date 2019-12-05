@@ -18,7 +18,6 @@ if (room == rm_test) {
 		ds_list_add(storyOrder, 1);
 		
 		
-		
 		//create door first
 		var inst_door = instance_create_depth(920, 600, -1, obj_interactable)
 		ds_list_add(objectList, inst_door);
@@ -47,7 +46,7 @@ if (room == rm_test) {
 		with (inst_newspaper){
 			objectID = 2;
 			dialog = "Man walks in space";
-			sprite = spr_test;
+			sprite = spr_news;
 		}
 		
 	}
