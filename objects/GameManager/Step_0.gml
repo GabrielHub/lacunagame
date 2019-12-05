@@ -68,8 +68,15 @@ if (room == rm_test) {
 		var inst_window = instance_create_depth(133, 477, -1, obj_interactable)
 		ds_list_add(objectList, inst_window);
 		with (inst_window){
-			objectID = 2;
+			objectID = 3;
 			dialog = "You peer outside the window. On a dim, cloudy, day,\nthere's a visibily hectic woman making rapid dashes to the car in the driveway\ncallously dumping boxes in the backseat. She eventually spots you and with a look of irritation\n on her face and becons you to come";
+			sprite = spr_news;
+		}
+		var inst_bed = instance_create_depth(727, 233, -1, obj_interactable)
+		ds_list_add(objectList, inst_bed);
+		with (inst_bed){
+			objectID = 1;
+			dialog = "There's nothing under the bed. That's a bit dissapointing\nbut you are inexplicably relieved that there are no monsters under it"
 			sprite = spr_news;
 		}
 		
