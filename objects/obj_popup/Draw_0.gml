@@ -4,8 +4,9 @@ var width = room_width - margin * 2;
 var choicePositions = room_height * 0.7;
 
 if (!isDoor) {
-	draw_text(500, 650, textToDraw);
 	draw_sprite(spriteToDraw, 0, 500, 300);
+	draw_set_halign(fa_center);
+	draw_text_ext(room_width / 2 - margin * 2, room_height / 2 - margin, textToDraw, -1, width);
 }
 else {
 	if (startStory) {
