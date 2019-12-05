@@ -17,6 +17,21 @@ if (room == rm_test) {
 		storyBook[1, story.path2] = 1;
 		ds_list_add(storyOrder, 1);
 		
+		storyBook[2, story.text] = "Why is this receipt here?";
+		storyBook[2, story.choice1] = "They got rid of my toys!";
+		storyBook[2, story.choice2] = "I'm getting new toys!";
+		storyBook[2, story.path1] = 0;
+		storyBook[2, story.path2] = 1;
+		ds_list_add(storyOrder, 2);
+		
+		storyBook[3, story.text] = "Why do we keep leaving?";
+		storyBook[3, story.choice1] = "They keep trying to throw away the past.";
+		storyBook[3, story.choice2] = "Dad's in the military.";
+		storyBook[3, story.path1] = 0;
+		storyBook[3, story.path2] = 1;
+		ds_list_add(storyOrder, 3);
+		
+		
 		
 		//create door first
 		var inst_door = instance_create_depth(920, 600, -1, obj_interactable)
