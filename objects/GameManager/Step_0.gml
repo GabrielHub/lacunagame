@@ -37,7 +37,7 @@ if (room == rm_test) {
 		ds_list_add(objectList, inst_receipt);
 		with (inst_receipt) {
 			objectID = 1;
-			dialog = "You find a receipt for a donation of a large amount of toys.";
+			dialog = "You find a receipt for a donation of a large amount of\ntoys.";
 			sprite = spr_receipt;
 		}
 		
@@ -45,7 +45,7 @@ if (room == rm_test) {
 		ds_list_add(objectList, inst_newspaper);
 		with (inst_newspaper){
 			objectID = 2;
-			dialog = "Man walks in space";
+			dialog = "A pile of newspapers have been layed across the floor\n as a place mat the headlines open up Man walks in space";
 			sprite = spr_news;
 		}
 		
