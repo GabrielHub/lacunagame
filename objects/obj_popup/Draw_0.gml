@@ -1,15 +1,16 @@
 //draw variables
-var margin = 32;
+var margin = 64;
 var width = room_width - margin * 2;
 var choicePositions = room_height * 0.7;
 
 if (!isDoor) {
 	draw_sprite(spriteToDraw, 0, 500, 300);
 	draw_set_halign(fa_center);
-	draw_text_ext(room_width / 2 - margin * 2, room_height / 2 - margin, textToDraw, -1, width);
+	draw_text_ext(room_width / 2 - margin, room_height / 2 - margin, textToDraw, -1, width);
 }
 else {
 	if (startStory) {
+		draw_set_halign(fa_left);
 		if (currentStory < ds_list_size(storyOrder)) {
 			//drawing event
 			var textDraw = string_copy(storyBook[ds_list_find_value(storyOrder, currentStory), story.text], 1, char);
@@ -23,7 +24,13 @@ else {
 	
 				//alarm, choice selection, and color
 				if (choiceAlarm == 0) {
-					draw_set_color(c_aqua);
+					//choice color 
+					if (storyBook[currentStory, story.path1] == 0) {
+						draw_set_color(c_green);
+					}
+					else {
+						draw_set_color(c_red);
+					}
 				}
 				//choice 1
 				var choiceText = "(1) " + storyBook[ds_list_find_value(storyOrder, currentStory), story.choice1];
@@ -33,7 +40,13 @@ else {
 	
 				//alarm, choice selection, and color
 				if (choiceAlarm == 1) {
-					draw_set_color(c_aqua);
+					//choice color 
+					if (storyBook[currentStory, story.path2] == 0) {
+						draw_set_color(c_green);
+					}
+					else {
+						draw_set_color(c_red);
+					}
 				}
 				//choice 2
 				choiceText = "(2) " + storyBook[ds_list_find_value(storyOrder, currentStory), story.choice2];

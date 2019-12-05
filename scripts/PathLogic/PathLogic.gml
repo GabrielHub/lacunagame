@@ -11,11 +11,11 @@ var pathType = argument2;
 if (pathType == 0) {
 	//move on in the story
 	currentStory++;
+	
 }
 else {
 	//shuffle order
 	ds_list_shuffle(storyOrder);
-	
 	//restart the story
 	currentStory = 0;
 	

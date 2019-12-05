@@ -32,8 +32,6 @@ if (room == rm_test) {
 		storyBook[3, story.path2] = 1;
 		ds_list_add(storyOrder, 3);
 		
-		
-		
 		//create door first
 		var inst_door = instance_create_depth(920, 600, -1, obj_interactable)
 		ds_list_add(objectList, inst_door);
@@ -79,6 +77,16 @@ if (room == rm_test) {
 			dialog = "There's nothing under the bed. That's a bit dissapointing\nbut you are inexplicably relieved that there are no monsters under it"
 			sprite = spr_news;
 		}
+	}
+}
+else if (room = rm_final) {
+	if (loadObjects) {
+		loadObjects = false;
+	}
+	
+	//Final room is different do time logic, end game if out of time.
+	finalLevelTime--;
+	if (finalLevelTime <= 0) {
 		
 	}
 }

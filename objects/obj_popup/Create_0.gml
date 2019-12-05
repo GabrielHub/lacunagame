@@ -8,3 +8,5 @@ textSpeed = 1;
 choices = 2;
 startStory = false;
 choiceAlarm = -1;
+
+choiceColor = c_green;
