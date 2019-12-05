@@ -73,7 +73,7 @@ if (room == rm_test) {
 		}
 		var inst_bed = instance_create_depth(727, 233, -1, obj_interactable)
 		ds_list_add(objectList, inst_bed);
-		with (inst_window){
+		with (inst_bed){
 			objectID = 1;
 			dialog = "There's nothing under the bed. That's a bit dissapointing\nbut you are inexplicably relieved that there are no monsters under it"
 			sprite = spr_news;
