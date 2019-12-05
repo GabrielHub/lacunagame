@@ -4,6 +4,8 @@ currentStory = 0;
 ds_list_clear(storyOrder);
 storyBook = ""; //might cause errors, eheck back here if you encounter errors in the next room
 
+audio_stop_all();
+
 //clear objects
 for (var i = 0; i < ds_list_size(GameManager.objectList); i++) {
 	instance_destroy(GameManager.objectList[| i]);

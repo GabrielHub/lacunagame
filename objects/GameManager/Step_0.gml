@@ -1,6 +1,7 @@
 if (room == rm_test) {
 	if (loadObjects) {
 		loadObjects = false;
+		audio_play_sound(snd_bgmusic, 1, true);
 		
 		//craete story elements
 		storyBook[0, story.text] = "Who are you?";

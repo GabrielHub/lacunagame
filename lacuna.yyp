@@ -175,6 +175,14 @@
             }
         },
         {
+            "Key": "85e98e67-086b-4f9c-af07-614f62720c93",
+            "Value": {
+                "id": "48e93121-75e9-4e78-b10e-3c639a6434b8",
+                "resourcePath": "sounds\\snd_bgmusic\\snd_bgmusic.yy",
+                "resourceType": "GMSound"
+            }
+        },
+        {
             "Key": "91f0d44d-bd28-454c-888b-b88f7c2be3fd",
             "Value": {
                 "id": "f9f850ea-b92a-437e-862a-77e489006066",
@@ -215,6 +223,14 @@
             }
         },
         {
+            "Key": "a7a79074-7004-47f3-9f6b-8152a6a01129",
+            "Value": {
+                "id": "235bc369-e49d-45bb-9065-8842b457d130",
+                "resourcePath": "views\\a7a79074-7004-47f3-9f6b-8152a6a01129.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "a9188620-a624-4a5a-83ae-a1b53faf038b",
             "Value": {
                 "id": "22b45780-3ebe-4bcc-a10d-e236efc6434a",
@@ -244,6 +260,14 @@
                 "id": "39aca8a3-a75c-4516-ab30-72048f01f852",
                 "resourcePath": "options\/windows\/options_windows.yy",
                 "resourceType": "GMWindowsOptions"
+            }
+        },
+        {
+            "Key": "dcf68633-a85c-4190-acac-2be7dd747822",
+            "Value": {
+                "id": "7421a4e9-ce93-44fe-b9e1-fbbb07961582",
+                "resourcePath": "views\\dcf68633-a85c-4190-acac-2be7dd747822.yy",
+                "resourceType": "GMFolder"
             }
         },
         {
