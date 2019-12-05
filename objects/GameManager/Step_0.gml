@@ -52,7 +52,7 @@ if (room == rm_test) {
 		ds_list_add(objectList, inst_receipt);
 		with (inst_receipt) {
 			objectID = 1;
-			dialog = "You find a receipt for a donation of a large amount of toys.";
+			dialog = "You find a receipt for a donation of a large amount of\ntoys.";
 			sprite = spr_receipt;
 		}
 		
@@ -60,7 +60,15 @@ if (room == rm_test) {
 		ds_list_add(objectList, inst_newspaper);
 		with (inst_newspaper){
 			objectID = 2;
-			dialog = "Man walks in space";
+			dialog = "Sheets of newspapers have been layed across the floor\n as a door mat. The headlines on one of them reads\n'Man walks in space's";
+			sprite = spr_news;
+		}
+		
+		var inst_window = instance_create_depth(133, 477, -1, obj_interactable)
+		ds_list_add(objectList, inst_window);
+		with (inst_window){
+			objectID = 2;
+			dialog = "You peer outside the window. On a dim, cloudy, day,\nthere's a visibily hectic woman making rapid dashes to the car in the driveway\ncallously dumping boxes in the backseat. She eventually spots you and with a look of irritation\n on her face and becons you to come";
 			sprite = spr_news;
 		}
 		
