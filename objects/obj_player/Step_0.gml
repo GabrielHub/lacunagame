@@ -70,3 +70,8 @@ else {
 		show_debug_message("Player left interaction box");
 	}
 }
+
+//particle system for door
+if (!activated) {
+	part_emitter_burst(obj_particle.particleSystem, obj_particle.emit, obj_particle.particle, 1);
+}
