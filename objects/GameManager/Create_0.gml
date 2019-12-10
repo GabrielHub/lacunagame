@@ -36,4 +36,4 @@ finalLevelTime = 6000; //total amount of time you get in the room, assuming you 
 maxRoomLoss = 200; //the max amount of time you can lose getting questions wrong at the door
 roomLoss = 0; //how much time you've lost in the room, once it hits the max it stops. Reset every room.
 #macro amtToLose 50; //variable for how much time you lose per wrong question
-gameWon = -1; //-1 when game isn't over, 0 is win, 1 is loss
+gameWon = 0; //0 when lost, 1 when won

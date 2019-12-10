@@ -85,25 +85,189 @@ if (room == rm_test) {
 			sprite = spr_news;
 		}
 	}
-	//GoToNextLevel();
 }
-
-/*
-else if (room == rm_second) {
-	if (loadObjects) {
-		loadObjects = false;
-		//craete story elements
-		storyBook[0, story.text] = "Why are we back here?";
-		storyBook[0, story.choice1] = "We didn't move out, after all.";
-		storyBook[0, story.choice2] = "Mom and Dad divorced.";
-		storyBook[0, story.path1] = 1;
-		storyBook[0, story.path2] = 0;
-		ds_list_add(storyOrder, 0);
-		
-	}
+else if (room = rm_teen){
+    if (loadObjects) {
+        loadObjects = false;
+        audio_play_sound(snd_bgmusic, 1, true);
+        storyBook[4, story.text] = "What are we doing back here?";
+        storyBook[4, story.choice1] = "We didn’t move out after all?";
+        storyBook[4, story.choice2] = "Parents divorced?";
+        storyBook[4, story.path1] = 1;
+        storyBook[4, story.path2] = 0;
+        ds_list_add(storyOrder, 4);
+        storyBook[5, story.text] = "What's special about today?";
+        storyBook[5, story.choice1] = "Birthday?";
+        storyBook[5, story.choice2] = "Christmas?";
+        storyBook[5, story.path1] = 1;
+        storyBook[5, story.path2] = 0;
+        ds_list_add(storyOrder, 5);
+        storyBook[6, story.text] = "Who's the letter from?";
+        storyBook[6, story.choice1] = "Older Brother?";
+        storyBook[6, story.choice2] = "Younger Sister?";
+        storyBook[6, story.path1] = 0;
+        storyBook[6, story.path2] = 1;
+        ds_list_add(storyOrder, 6);
+        storyBook[7, story.text] = "What do you see yourself as?";
+        storyBook[7, story.choice1] = "A wistful child";
+        storyBook[7, story.choice2] = "A wisened adult";
+        storyBook[7, story.path1] = 0;
+        storyBook[7, story.path2] = 1;
+        ds_list_add(storyOrder, 7);
+        var inst_door = instance_create_depth(920, 600, -1, obj_interactable)
+        ds_list_add(objectList, inst_door);
+        with (inst_door) {
+            objectID = 0;
+            dialog = "Press 'E' to rebuild memory.";
+            sprite = spr_door;
+            isDoor = true;
+            //how to change sprite width and height do it here
+            image_xscale = 0.8;
+            image_yscale = 0.8;
+        }
+        //receipt object
+        var inst_easel = instance_create_depth(400, 400, -1, obj_interactable)
+        ds_list_add(objectList, inst_easel);
+        with (inst_easel) {
+            objectID = 1;
+            dialog = "The easel has a half finished painting stretched over it.\nThe picture wasn't complete but from what's been\ndone it looks like some fantasy scenery";
+            sprite = spr_receipt;
+        }
+        var  inst_letter= instance_create_depth(400, 400, -1, obj_interactable)
+        ds_list_add(objectList, inst_letter);
+        with (inst_letter) {
+            objectID = 2;
+            dialog = "There's a letter sitting atop your dresser. It reads\n'Hey Sis, how are things with mom. I wish the whole family could be together for the holidays, buy you know ... hope you'll come visit dad and I sometime'";
+            sprite = spr_receipt;
+        }
+        var  inst_poster= instance_create_depth(400, 400, -1, obj_interactable)
+        ds_list_add(objectList, inst_poster);
+        with (inst_poster) {
+            objectID = 3;
+            dialog = "The poster on the wall shows a posterized image of a child scribbling on a notebook. Behind him is a man slumped over the desk. One the sides the caption reads 'Use Your Illusion'";
+            sprite = spr_receipt;
+        }
+        var  inst_teenWindow= instance_create_depth(400, 400, -1, obj_interactable)
+        ds_list_add(objectList, inst_teenWindow);
+        with (inst_teenWindow) {
+            objectID = 4;
+            dialog = "Cloudy days had turned to snowy onces outside. Lights\nhung down from the roof of the neighbors house. A boy strolled\nout from your house.";
+            sprite = spr_receipt;
+        }
+        var  inst_homework= instance_create_depth(400, 400, -1, obj_interactable)
+        ds_list_add(objectList, inst_homework);
+        with (inst_homework) {
+            objectID = 5;
+            dialog = "There were pages strewn across the desk, filled with hastily scribbled factoids.\nA massive history book was plopped in the center of it all";
+            sprite = spr_receipt;
+        }
+        var  inst_footprints= instance_create_depth(400, 400, -1, obj_interactable)
+        ds_list_add(objectList, inst_footprints);
+        with (inst_footprints) {
+            objectID = 6;
+            dialog = "Snowy footprints trailed into the room. They are quite large.";
+            sprite = spr_receipt;
+        }
+        var  inst_gift= instance_create_depth(400, 400, -1, obj_interactable)
+        ds_list_add(objectList, inst_gift);
+        with (inst_gift) {
+            objectID = 7;
+            dialog = "This was a gift wrapped box. It warms the heart knowing someone would give it to you";
+            sprite = spr_receipt;
+        }
+    }
 }
-*/
-
+else if (room = rm_college){
+    if (loadObjects) {
+        loadObjects = false;
+        audio_play_sound(snd_bgmusic, 1, true);
+        storyBook[8, story.text] = "Why aren’t you in school?";
+        storyBook[8, story.choice1] = "I chose another path";
+        storyBook[8, story.choice2] = "I chose another path";
+        storyBook[8, story.path1] = 1;
+        storyBook[8, story.path2] = 0;
+        ds_list_add(storyOrder, 8);
+        storyBook[9, story.text] = "Where's your brother?";
+        storyBook[9, story.choice1] = "He's out of state at college";
+        storyBook[9, story.choice2] = "He's on a date with his girlfriend";
+        storyBook[9, story.path1] = 0;
+        storyBook[9, story.path2] = 1;
+        ds_list_add(storyOrder, 9);
+        storyBook[10, story.text] = "How do you feel about your memories?";
+        storyBook[10, story.choice1] = "Fondly";
+        storyBook[10, story.choice2] = "Disdainfully";
+        storyBook[10, story.path1] = 1;
+        storyBook[10, story.path2] = 0;
+        ds_list_add(storyOrder, 10);
+        storyBook[11, story.text] = "How have you been dealing with your feelings";
+        storyBook[11, story.choice1] = "Sorrowfully";
+        storyBook[11, story.choice2] = "Violentlly";
+        storyBook[11, story.path1] = 1;
+        storyBook[11, story.path2] = 0;
+        ds_list_add(storyOrder, 11);
+        var inst_door = instance_create_depth(920, 600, -1, obj_interactable)
+        ds_list_add(objectList, inst_door);
+        with (inst_door) {
+            objectID = 0;
+            dialog = "Press 'E' to rebuild memory.";
+            sprite = spr_door;
+            isDoor = true;
+            //how to change sprite width and height do it here
+            image_xscale = 0.8;
+            image_yscale = 0.8;
+        }
+        //receipt object
+        var inst_hole = instance_create_depth(400, 400, -1, obj_interactable)
+        ds_list_add(objectList, inst_hole);
+        with (inst_hole) {
+            objectID = 1;
+            dialog = "Theres a cratered hole in the wall. It looks like something\nstruck it really hard";
+            sprite = spr_receipt;
+        }
+        var inst_chest = instance_create_depth(400, 400, -1, obj_interactable)
+        ds_list_add(objectList, inst_chest);
+        with (inst_chest) {
+            objectID = 2;
+            dialog = "Enclosed in the chest were an assortment of cds. I remember\nthem from when they used to sit on the bookshelf years ago. With them was the poster that used to hang on\nthe wall. Deeper down I saw the painting finally finished.\nAt the very bottom were the drawings I recall from my childhood.\n For some reason they made me sick to my stomach";
+            sprite = spr_receipt;
+        }
+        var inst_photos = instance_create_depth(400, 400, -1, obj_interactable)
+        ds_list_add(objectList, inst_photos);
+        with (inst_photos) {
+            objectID = 3;
+            dialog = "Splattered wildly on the floor were a bunch of old photos.\nAmong the pile was an newly desecrated album.";
+            sprite = spr_receipt;
+        }
+        var inst_albums = instance_create_depth(400, 400, -1, obj_interactable)
+        ds_list_add(objectList, inst_albums);
+        with (inst_albums) {
+            objectID = 3;
+            dialog = "There were rows and rows of photo albums on my bookshelf.\n The photos seemed all ruffled and torn, but also carefully placed into the album.";
+            sprite = spr_receipt;
+        }
+        var inst_admission = instance_create_depth(400, 400, -1, obj_interactable)
+        ds_list_add(objectList, inst_admission);
+        with (inst_admission) {
+            objectID = 4;
+            dialog = "There were a pile of letter on the desk\nOpening one up you see that it's a college admissions letter, and\nyou've been accepted! It's in L.A. too, how exciting!";
+            sprite = spr_receipt;
+        }
+        var inst_collegeWindow = instance_create_depth(400, 400, -1, obj_interactable)
+        ds_list_add(objectList, inst_collegeWindow);
+        with (inst_admission) {
+            objectID = 5;
+            dialog = "You looked out the window to see a man and woman arguing on the driveway!\nThe only words you can make out through the class are the\nwomen screaming 'I am absolutely not okay with her moving that far away!'";
+            sprite = spr_receipt;
+        }
+        var inst_phone = instance_create_depth(400, 400, -1, obj_interactable)
+        ds_list_add(objectList, inst_phone);
+        with (inst_phone) {
+            objectID = 6;
+            dialog = "The phone on your bed pinged in response to a text message.\nBro:'I'll be back in town for winter break\nBro: 'also why does mom keep asking us to look for old photographs'";
+            sprite = spr_receipt;
+        }
+    }
+}
 else if (room == rm_final) {
 	if (loadObjects) {
 		loadObjects = false;
@@ -112,6 +276,16 @@ else if (room == rm_final) {
 	//Final room is different do time logic, end game if out of time.
 	finalLevelTime--;
 	if (finalLevelTime <= 0) {
+		if (gameWon == 0) {
+			//lose state
+		}
+		else {
+			//win state, might not be necessary as it could be impossible to win when running out of time
+			show_debug_message("STATE: Time is out but player has won?");
+		}
+	}
+	//if game is won and time is still left
+	if (gameWon == 1) {
 		
 	}
 }

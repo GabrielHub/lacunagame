@@ -175,6 +175,14 @@
             }
         },
         {
+            "Key": "7346f2b1-8a0e-4926-adb2-59dcba125748",
+            "Value": {
+                "id": "c8737f82-ff2b-419d-ab22-55ab83a0b38a",
+                "resourcePath": "rooms\\rm_college\\rm_college.yy",
+                "resourceType": "GMRoom"
+            }
+        },
+        {
             "Key": "85e98e67-086b-4f9c-af07-614f62720c93",
             "Value": {
                 "id": "48e93121-75e9-4e78-b10e-3c639a6434b8",
@@ -263,6 +271,22 @@
             }
         },
         {
+            "Key": "d5b237ca-3ba2-49e7-a0bf-69d2b4dc3ecf",
+            "Value": {
+                "id": "3a06b8fc-9887-4e7c-a997-fcab27587efd",
+                "resourcePath": "views\\d5b237ca-3ba2-49e7-a0bf-69d2b4dc3ecf.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "d91cba2b-7ade-4f77-95d7-3276865be2f4",
+            "Value": {
+                "id": "84a4c8dc-1d1c-4e6e-a28d-c3231a222cbe",
+                "resourcePath": "views\\d91cba2b-7ade-4f77-95d7-3276865be2f4.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "dcf68633-a85c-4190-acac-2be7dd747822",
             "Value": {
                 "id": "7421a4e9-ce93-44fe-b9e1-fbbb07961582",
@@ -330,7 +354,7 @@
             "Key": "f52d0d29-800b-476a-adbd-95d827bab961",
             "Value": {
                 "id": "1cd9ce6d-ce1a-4181-ada2-3520dad67841",
-                "resourcePath": "rooms\\rm_second\\rm_second.yy",
+                "resourcePath": "rooms\\rm_teen\\rm_teen.yy",
                 "resourceType": "GMRoom"
             }
         },
@@ -340,6 +364,14 @@
                 "id": "92643f67-55a9-4a5b-9c0c-aad426745ef7",
                 "resourcePath": "sprites\/spr_door\/spr_door.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "fbadfb35-3788-4c0a-9c01-2bd15ab8eb2c",
+            "Value": {
+                "id": "0b6cfcd5-1ecb-4938-a415-8c078f2d1f84",
+                "resourcePath": "views\\fbadfb35-3788-4c0a-9c01-2bd15ab8eb2c.yy",
+                "resourceType": "GMFolder"
             }
         },
         {

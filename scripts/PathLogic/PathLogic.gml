@@ -15,9 +15,11 @@ if (pathType == 0) {
 }
 else {
 	//shuffle order
-	ds_list_shuffle(storyOrder);
+	//ds_list_shuffle(storyOrder);
 	//restart the story
-	currentStory = 0;
+	//currentStory = 0;
+	
+	currentStory++;
 	
 	//reduce time for the final room
 	if (GameManager.roomLoss <= GameManager.maxRoomLoss) {
@@ -25,5 +27,8 @@ else {
 		GameManager.roomLoss += amtToLose;
 	}
 	
-	//Do effects
+	//final room
+	if (room == rm_final) {
+		GameManager.gameWon++; //win State!
+	}
 }
