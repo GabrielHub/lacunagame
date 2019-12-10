@@ -19,16 +19,20 @@ else {
 	//restart the story
 	//currentStory = 0;
 	
-	currentStory++;
-	
-	//reduce time for the final room
-	if (GameManager.roomLoss <= GameManager.maxRoomLoss) {
-		finalLevelTime -= amtToLose;
-		GameManager.roomLoss += amtToLose;
+	if (room != rm_final) {
+		currentStory++;
+		//reduce time for the final room
+		if (GameManager.roomLoss <= GameManager.maxRoomLoss) {
+			finalLevelTime -= amtToLose;
+			GameManager.roomLoss += amtToLose;
+		}
 	}
-	
-	//final room
-	if (room == rm_final) {
-		GameManager.gameWon++; //win State!
+	else {
+		//final room is special, reset
+		
+		//shuffle order
+		ds_list_shuffle(storyOrder);
+		//restart the story
+		currentStory = 0;
 	}
 }
