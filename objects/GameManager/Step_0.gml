@@ -19,24 +19,24 @@ if (room == rm_test) {
 		ds_list_add(storyOrder, 1);
 		
 		storyBook[2, story.text] = "Why is this receipt here?";
-		storyBook[2, story.choice1] = "They got rid of my toys!";
-		storyBook[2, story.choice2] = "I'm getting new toys!";
-		storyBook[2, story.path1] = 0;
-		storyBook[2, story.path2] = 1;
+		storyBook[2, story.choice1] = "I'm getting new toys!";
+		storyBook[2, story.choice2] = "They got rid of my toys!";
+		storyBook[2, story.path1] = 1;
+		storyBook[2, story.path2] = 0;
 		ds_list_add(storyOrder, 2);
 		
 		storyBook[3, story.text] = "Why do we keep leaving?";
-		storyBook[3, story.choice1] = "They keep trying to throw away the past.";
+		storyBook[3, story.choice1] = "They're on the run.";
 		storyBook[3, story.choice2] = "Dad's in the military.";
 		storyBook[3, story.path1] = 0;
 		storyBook[3, story.path2] = 1;
 		ds_list_add(storyOrder, 3);
 		
 		storyBook[4, story.text] = "Where are we going?";
-		storyBook[4, story.choice1] = "Somewhere I don't want to.";
-		storyBook[4, story.choice2] = "Somewhere fun";
-		storyBook[4, story.path1] = 0;
-		storyBook[4, story.path2] = 1;
+		storyBook[4, story.choice1] = "Somewhere fun.";
+		storyBook[4, story.choice2] = "Somewhere I don't want to.";
+		storyBook[4, story.path1] = 1;
+		storyBook[4, story.path2] = 0;
 		ds_list_add(storyOrder, 4);
 		
 		//create door first
