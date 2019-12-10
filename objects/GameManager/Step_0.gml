@@ -32,6 +32,13 @@ if (room == rm_test) {
 		storyBook[3, story.path2] = 1;
 		ds_list_add(storyOrder, 3);
 		
+		storyBook[4, story.text] = "Where are we going?";
+		storyBook[4, story.choice1] = "Somewhere I don't want to.";
+		storyBook[4, story.choice2] = "Somewhere fun";
+		storyBook[4, story.path1] = 0;
+		storyBook[4, story.path2] = 1;
+		ds_list_add(storyOrder, 4);
+		
 		//create door first
 		var inst_door = instance_create_depth(920, 600, -1, obj_interactable)
 		ds_list_add(objectList, inst_door);
@@ -67,7 +74,7 @@ if (room == rm_test) {
 		ds_list_add(objectList, inst_window);
 		with (inst_window){
 			objectID = 3;
-			dialog = "You peer outside the window. On a dim, cloudy, day,\nthere's a visibily hectic woman making rapid dashes to the car in the driveway\ncallously dumping boxes in the backseat. She eventually spots you and with a look of irritation\n on her face and becons you to come";
+			dialog = "You peer outside the window. On a dim, cloudy, day,\nthere's a visibily hectic woman making rapid dashes to the car in the driveway\ncallously dumping boxes in the backseat. She eventually spots you and with a look of irritation\n on her face and beckons you to come";
 			sprite = spr_news;
 		}
 		var inst_bed = instance_create_depth(727, 233, -1, obj_interactable)
@@ -78,8 +85,26 @@ if (room == rm_test) {
 			sprite = spr_news;
 		}
 	}
+	//GoToNextLevel();
 }
-else if (room = rm_final) {
+
+/*
+else if (room == rm_second) {
+	if (loadObjects) {
+		loadObjects = false;
+		//craete story elements
+		storyBook[0, story.text] = "Why are we back here?";
+		storyBook[0, story.choice1] = "We didn't move out, after all.";
+		storyBook[0, story.choice2] = "Mom and Dad divorced.";
+		storyBook[0, story.path1] = 1;
+		storyBook[0, story.path2] = 0;
+		ds_list_add(storyOrder, 0);
+		
+	}
+}
+*/
+
+else if (room == rm_final) {
 	if (loadObjects) {
 		loadObjects = false;
 	}
