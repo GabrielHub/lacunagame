@@ -75,14 +75,14 @@ if (room == rm_test) {
 		with (inst_window){
 			objectID = 3;
 			dialog = "You peer outside the window. On a dim, cloudy, day,\nthere's a visibily hectic woman making rapid dashes to the car in the driveway\ncallously dumping boxes in the backseat. She eventually spots you and with a look of irritation\n on her face and beckons you to come";
-			sprite = spr_news;
+			sprite = spr_dialog;
 		}
 		var inst_bed = instance_create_depth(727, 233, -1, obj_interactable)
 		ds_list_add(objectList, inst_bed);
 		with (inst_bed){
 			objectID = 1;
 			dialog = "There's nothing under the bed. That's a bit dissapointing\nbut you are inexplicably relieved that there are no monsters under it"
-			sprite = spr_news;
+			sprite = spr_bed;
 		}
 	}
 }
@@ -131,7 +131,7 @@ else if (room = rm_teen){
         with (inst_easel) {
             objectID = 1;
             dialog = "The easel has a half finished painting stretched over it.\nThe picture wasn't complete but from what's been\ndone it looks like some fantasy scenery";
-            sprite = spr_receipt;
+            sprite = spr_easel;
         }
         var  inst_letter= instance_create_depth(400, 400, -1, obj_interactable)
         ds_list_add(objectList, inst_letter);
@@ -159,7 +159,7 @@ else if (room = rm_teen){
         with (inst_homework) {
             objectID = 5;
             dialog = "There were pages strewn across the desk, filled with hastily scribbled factoids.\nA massive history book was plopped in the center of it all";
-            sprite = spr_receipt;
+            sprite = spr_hw;
         }
         var  inst_footprints= instance_create_depth(400, 400, -1, obj_interactable)
         ds_list_add(objectList, inst_footprints);
@@ -173,7 +173,7 @@ else if (room = rm_teen){
         with (inst_gift) {
             objectID = 7;
             dialog = "This was a gift wrapped box. It warms the heart knowing someone would give it to you";
-            sprite = spr_receipt;
+            sprite = spr_gift;
         }
     }
 }
@@ -183,7 +183,7 @@ else if (room = rm_college){
         audio_play_sound(snd_bgmusic, 1, true);
         storyBook[8, story.text] = "Why aren’t you in school?";
         storyBook[8, story.choice1] = "I chose another path";
-        storyBook[8, story.choice2] = "I chose another path";
+        storyBook[8, story.choice2] = "I am. Just not the one I wanted";
         storyBook[8, story.path1] = 1;
         storyBook[8, story.path2] = 0;
         ds_list_add(storyOrder, 8);
@@ -222,7 +222,7 @@ else if (room = rm_college){
         with (inst_hole) {
             objectID = 1;
             dialog = "Theres a cratered hole in the wall. It looks like something\nstruck it really hard";
-            sprite = spr_receipt;
+            sprite = spr_hole;
         }
         var inst_chest = instance_create_depth(400, 400, -1, obj_interactable)
         ds_list_add(objectList, inst_chest);
@@ -243,7 +243,7 @@ else if (room = rm_college){
         with (inst_albums) {
             objectID = 3;
             dialog = "There were rows and rows of photo albums on my bookshelf.\n The photos seemed all ruffled and torn, but also carefully placed into the album.";
-            sprite = spr_receipt;
+            sprite = spr_shelf;
         }
         var inst_admission = instance_create_depth(400, 400, -1, obj_interactable)
         ds_list_add(objectList, inst_admission);
@@ -257,14 +257,14 @@ else if (room = rm_college){
         with (inst_admission) {
             objectID = 5;
             dialog = "You looked out the window to see a man and woman arguing on the driveway!\nThe only words you can make out through the class are the\nwomen screaming 'I am absolutely not okay with her moving that far away!'";
-            sprite = spr_receipt;
+            sprite = spr_dialog;
         }
         var inst_phone = instance_create_depth(400, 400, -1, obj_interactable)
         ds_list_add(objectList, inst_phone);
         with (inst_phone) {
             objectID = 6;
             dialog = "The phone on your bed pinged in response to a text message.\nBro:'I'll be back in town for winter break\nBro: 'also why does mom keep asking us to look for old photographs'";
-            sprite = spr_receipt;
+            sprite = spr_phone;
         }
     }
 }

@@ -4,7 +4,9 @@
     "mvc": "1.1",
     "name": "fbadfb35-3788-4c0a-9c01-2bd15ab8eb2c",
     "children": [
-        
+        "d2fb32fc-0dbc-4be0-b94f-488d46971b3c",
+        "b18898e0-7235-4c14-85cc-db46b74e8d1d",
+        "955f6704-5493-4df7-b80a-27b57b4540c6"
     ],
     "filterType": "GMSprite",
     "folderName": "Room 2",
