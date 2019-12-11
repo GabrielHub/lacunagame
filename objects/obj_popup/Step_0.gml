@@ -41,5 +41,10 @@ if (startStory) {
 	else {
 		show_debug_message("OUT OF STORIES OUT OF INDEX");	
 		GoToNextLevel();
+		
+		//final room
+		if (room == rm_final) {
+			GameManager.gameWon++; //win State!
+		}
 	}
 }
