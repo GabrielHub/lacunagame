@@ -291,14 +291,14 @@ else if (room == rm_final) {
 		
 		ds_list_clear(storyOrder);
         storyBook[0, story.text] = "What's with the boxes?";
-		storyBook[0, story.choice1] = "I'm moving in?";
-		storyBook[0, story.choice2] = "I'm moving out?";
+		storyBook[0, story.choice1] = "I'm moving in.";
+		storyBook[0, story.choice2] = "I'm moving out.";
 		storyBook[0, story.path1] = 1;
 		storyBook[0, story.path2] = 0;
 		ds_list_add(storyOrder, 0);
 		
 		storyBook[1, story.text] = "Why is this receipt here?";
-		storyBook[1, story.choice1] = "I bought back my toy";
+		storyBook[1, story.choice1] = "I bought back my toy.";
 		storyBook[1, story.choice2] = "I'm trying to get rid of my old interests!";
 		storyBook[1, story.path1] = 1;
 		storyBook[1, story.path2] = 0;
@@ -306,7 +306,7 @@ else if (room == rm_final) {
 		
 		storyBook[2, story.text] = "Why am I leaving?";
 		storyBook[2, story.choice1] = "I'm trying to run away.";
-		storyBook[2, story.choice2] = "My dad want's me back.";
+		storyBook[2, story.choice2] = "My dad wants me back.";
 		storyBook[2, story.path1] = 0;
 		storyBook[2, story.path2] = 1;
 		ds_list_add(storyOrder, 2);
@@ -318,14 +318,14 @@ else if (room == rm_final) {
 		storyBook[3, story.path2] = 1;
 		ds_list_add(storyOrder, 3);
 		
-		storyBook[4, story.text] = "How did I end up in this mindscape";
+		storyBook[4, story.text] = "How did I end up in this mindscape?";
 		storyBook[4, story.choice1] = "I got into a car accident and I'm comatosed right now.";
 		storyBook[4, story.choice2] = "I blacked out from alcohol poioning.";
 		storyBook[4, story.path1] = 1;
 		storyBook[4, story.path2] = 0;
 		ds_list_add(storyOrder, 4);
 		
-		storyBook[5, story.text] = "Who are you";
+		storyBook[5, story.text] = "Who are you?";
 		storyBook[5, story.choice1] = "The same stupid child that didn't know any better.";
 		storyBook[5, story.choice2] = "The same thing my parents were.";
 		storyBook[5, story.path1] = 1;
