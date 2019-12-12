@@ -24,7 +24,7 @@ else {
 	}
 	else {
 		//final room is special, reset
-		
+		show_debug_message("storyorder size: " + string(ds_list_size(storyOrder)));
 		//shuffle order
 		ds_list_shuffle(storyOrder);
 		//restart the story

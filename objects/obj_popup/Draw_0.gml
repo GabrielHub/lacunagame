@@ -25,7 +25,7 @@ else {
 				//alarm, choice selection, and color
 				if (choiceAlarm == 0) {
 					//choice color 
-					if (storyBook[currentStory, story.path1] == 0) {
+					if (storyBook[ds_list_find_value(storyOrder, currentStory), story.path1] == 0) {
 						draw_set_color(c_green);
 					}
 					else {
@@ -41,7 +41,7 @@ else {
 				//alarm, choice selection, and color
 				if (choiceAlarm == 1) {
 					//choice color 
-					if (storyBook[currentStory, story.path2] == 0) {
+					if (storyBook[ds_list_find_value(storyOrder, currentStory), story.path2] == 0) {
 						draw_set_color(c_green);
 					}
 					else {
