@@ -6,7 +6,7 @@ var width = room_width - margin * 2;
 if (room == rm_final) {
 	//Draw timer for final room
 	draw_set_color(c_red);
-	draw_text_ext(margin * 2, margin, "Time Left: " + string(floor((finalLevelTime / 60))), -1, width);
+	draw_text_ext(room_width - (margin * 2) - 100, margin, "Time Left: " + string(floor((finalLevelTime / 60))), -1, width);
 	draw_set_color(c_white);
 	
 	//Means gameover state

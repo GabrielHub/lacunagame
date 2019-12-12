@@ -400,7 +400,9 @@ else if (room == rm_final) {
 	}
 	
 	//Final room is different do time logic, end game if out of time.
-	finalLevelTime--;
+	if (gameWon == -1) {
+		finalLevelTime--;
+	}
 	if (finalLevelTime <= 0) {
 		gameWon = 0;
 	}

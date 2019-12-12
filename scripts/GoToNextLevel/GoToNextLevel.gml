@@ -17,3 +17,11 @@ if (instance_exists(obj_particle)) {
 if (room != rm_final) {
 	room_goto_next();
 }
+else {
+	//when room is final, clear the room and blur the background so text can go over the screen
+	var lay_id = layer_get_id("Background");
+	var back_id = layer_background_get_id(lay_id);
+	layer_background_index(back_id, 1);
+	
+	//instance_destroy(obj_player);
+}
