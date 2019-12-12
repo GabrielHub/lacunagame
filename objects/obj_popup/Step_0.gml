@@ -44,7 +44,7 @@ if (startStory) {
 		
 		//final room
 		if (room == rm_final) {
-			GameManager.gameWon++; //win State!
+			GameManager.gameWon = 1; //win State!
 		}
 	}
 }

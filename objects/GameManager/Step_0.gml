@@ -104,7 +104,7 @@ else if (room = rm_teen){
     if (loadObjects) {
 		ds_list_clear(storyOrder);
         loadObjects = false;
-        audio_play_sound(snd_bgmusic, 1, true);
+        //audio_play_sound(snd_bgmusic, 1, true);
         storyBook[0, story.text] = "What are we doing back here?";
         storyBook[0, story.choice1] = "We didn’t move out after all?";
         storyBook[0, story.choice2] = "Parents divorced?";
@@ -196,7 +196,7 @@ else if (room = rm_college){
     if (loadObjects) {
 		ds_list_clear(storyOrder);
         loadObjects = false;
-        audio_play_sound(snd_bgmusic, 1, true);
+        //audio_play_sound(snd_bgmusic, 1, true);
         storyBook[0, story.text] = "Why aren’t you in school?";
         storyBook[0, story.choice1] = "I chose another path";
         storyBook[0, story.choice2] = "I am. Just not the one I wanted";
@@ -287,7 +287,7 @@ else if (room = rm_college){
 else if (room == rm_final) {
 	if (loadObjects) {
 		loadObjects = false;
-		audio_play_sound(snd_bgmusic, 1, true);
+		//audio_play_sound(snd_bgmusic, 1, true);
 		
 		ds_list_clear(storyOrder);
         storyBook[0, story.text] = "What's with the boxes?";
@@ -402,16 +402,6 @@ else if (room == rm_final) {
 	//Final room is different do time logic, end game if out of time.
 	finalLevelTime--;
 	if (finalLevelTime <= 0) {
-		if (gameWon == 0) {
-			//lose state
-		}
-		else {
-			//win state, might not be necessary as it could be impossible to win when running out of time
-			show_debug_message("STATE: Time is out but player has won?");
-		}
-	}
-	//if game is won and time is still left
-	if (gameWon == 1) {
-		
+		gameWon = 0;
 	}
 }

@@ -13,12 +13,7 @@ if (pathType == 0) {
 	currentStory++;
 	
 }
-else {
-	//shuffle order
-	//ds_list_shuffle(storyOrder);
-	//restart the story
-	//currentStory = 0;
-	
+else {	
 	if (room != rm_final) {
 		currentStory++;
 		//reduce time for the final room
