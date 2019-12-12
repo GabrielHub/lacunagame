@@ -102,6 +102,7 @@ if (room == rm_test) {
 }
 else if (room = rm_teen){
     if (loadObjects) {
+		ds_list_clear(storyOrder);
         loadObjects = false;
         audio_play_sound(snd_bgmusic, 1, true);
         storyBook[0, story.text] = "What are we doing back here?";
@@ -140,49 +141,49 @@ else if (room = rm_teen){
             image_yscale = 0.8;
         }
         //receipt object
-        var inst_easel = instance_create_depth(400, 400, -1, obj_interactable)
+        var inst_easel = instance_create_depth(401, 437, -1, obj_interactable)
         ds_list_add(objectList, inst_easel);
         with (inst_easel) {
             objectID = 1;
             dialog = "The easel has a half finished painting stretched over it.\nThe picture wasn't complete but from what's been\ndone it looks like some fantasy scenery";
             sprite = spr_easel;
         }
-        var  inst_letter= instance_create_depth(400, 400, -1, obj_interactable)
+        var  inst_letter= instance_create_depth(645, 866, -1, obj_interactable)
         ds_list_add(objectList, inst_letter);
         with (inst_letter) {
             objectID = 2;
             dialog = "There's a letter sitting atop your dresser. It reads\n'Hey Sis, how are things with mom. I wish the whole family could be together for the holidays, buy you know ... hope you'll come visit dad and I sometime'";
             sprite = spr_receipt;
         }
-        var  inst_poster= instance_create_depth(400, 400, -1, obj_interactable)
+        var  inst_poster= instance_create_depth(698, 131, -1, obj_interactable)
         ds_list_add(objectList, inst_poster);
         with (inst_poster) {
             objectID = 3;
             dialog = "The poster on the wall shows a posterized image of a child scribbling on a notebook. Behind him is a man slumped over the desk. One the sides the caption reads 'Use Your Illusion'";
             sprite = spr_receipt;
         }
-        var  inst_teenWindow= instance_create_depth(400, 400, -1, obj_interactable)
+        var  inst_teenWindow= instance_create_depth(161, 513, -1, obj_interactable)
         ds_list_add(objectList, inst_teenWindow);
         with (inst_teenWindow) {
             objectID = 4;
             dialog = "Cloudy days had turned to snowy onces outside. Lights\nhung down from the roof of the neighbors house. A boy strolled\nout from your house.";
             sprite = spr_receipt;
         }
-        var  inst_homework= instance_create_depth(400, 400, -1, obj_interactable)
+        var  inst_homework= instance_create_depth(304, 898, -1, obj_interactable)
         ds_list_add(objectList, inst_homework);
         with (inst_homework) {
             objectID = 5;
             dialog = "There were pages strewn across the desk, filled with hastily scribbled factoids.\nA massive history book was plopped in the center of it all";
             sprite = spr_hw;
         }
-        var  inst_footprints= instance_create_depth(400, 400, -1, obj_interactable)
+        var  inst_footprints= instance_create_depth(704, 670, -1, obj_interactable)
         ds_list_add(objectList, inst_footprints);
         with (inst_footprints) {
             objectID = 6;
             dialog = "Snowy footprints trailed into the room. They are quite large.";
             sprite = spr_receipt;
         }
-        var  inst_gift= instance_create_depth(400, 400, -1, obj_interactable)
+        var  inst_gift= instance_create_depth(535, 642, -1, obj_interactable)
         ds_list_add(objectList, inst_gift);
         with (inst_gift) {
             objectID = 7;
@@ -193,6 +194,7 @@ else if (room = rm_teen){
 }
 else if (room = rm_college){
     if (loadObjects) {
+		ds_list_clear(storyOrder);
         loadObjects = false;
         audio_play_sound(snd_bgmusic, 1, true);
         storyBook[0, story.text] = "Why aren’t you in school?";
@@ -231,49 +233,49 @@ else if (room = rm_college){
             image_yscale = 0.8;
         }
         //receipt object
-        var inst_hole = instance_create_depth(400, 400, -1, obj_interactable)
+        var inst_hole = instance_create_depth(683, 123, -1, obj_interactable)
         ds_list_add(objectList, inst_hole);
         with (inst_hole) {
             objectID = 1;
             dialog = "Theres a cratered hole in the wall. It looks like something\nstruck it really hard";
             sprite = spr_hole;
         }
-        var inst_chest = instance_create_depth(400, 400, -1, obj_interactable)
+        var inst_chest = instance_create_depth(628, 736, -1, obj_interactable)
         ds_list_add(objectList, inst_chest);
         with (inst_chest) {
             objectID = 2;
             dialog = "Enclosed in the chest were an assortment of cds. I remember\nthem from when they used to sit on the bookshelf years ago. With them was the poster that used to hang on\nthe wall. Deeper down I saw the painting finally finished.\nAt the very bottom were the drawings I recall from my childhood.\n For some reason they made me sick to my stomach";
             sprite = spr_receipt;
         }
-        var inst_photos = instance_create_depth(400, 400, -1, obj_interactable)
+        var inst_photos = instance_create_depth(368, 421, -1, obj_interactable)
         ds_list_add(objectList, inst_photos);
         with (inst_photos) {
             objectID = 3;
             dialog = "Splattered wildly on the floor were a bunch of old photos.\nAmong the pile was an newly desecrated album.";
             sprite = spr_receipt;
         }
-        var inst_albums = instance_create_depth(400, 400, -1, obj_interactable)
+        var inst_albums = instance_create_depth(324, 127, -1, obj_interactable)
         ds_list_add(objectList, inst_albums);
         with (inst_albums) {
             objectID = 3;
             dialog = "There were rows and rows of photo albums on my bookshelf.\n The photos seemed all ruffled and torn, but also carefully placed into the album.";
             sprite = spr_shelf;
         }
-        var inst_admission = instance_create_depth(400, 400, -1, obj_interactable)
+        var inst_admission = instance_create_depth(325, 879, -1, obj_interactable)
         ds_list_add(objectList, inst_admission);
         with (inst_admission) {
             objectID = 4;
             dialog = "There were a pile of letters on the desk\nOpening one up you see that it's a college admissions letter, and\nyou've been accepted! It's in L.A. too, how exciting!";
             sprite = spr_receipt;
         }
-        var inst_collegeWindow = instance_create_depth(400, 400, -1, obj_interactable)
+        var inst_collegeWindow = instance_create_depth(104, 479, -1, obj_interactable)
         ds_list_add(objectList, inst_collegeWindow);
-        with (inst_admission) {
+        with (inst_collegeWindow) {
             objectID = 5;
             dialog = "You looked out the window to see a man and woman arguing on the driveway!\nThe only words you can make out through the class are the\nwomen screaming 'I am absolutely not okay with her moving that far away!'";
             sprite = spr_dialog;
         }
-        var inst_phone = instance_create_depth(400, 400, -1, obj_interactable)
+        var inst_phone = instance_create_depth(803, 369, -1, obj_interactable)
         ds_list_add(objectList, inst_phone);
         with (inst_phone) {
             objectID = 6;
@@ -287,56 +289,55 @@ else if (room == rm_final) {
 		loadObjects = false;
 		audio_play_sound(snd_bgmusic, 1, true);
 		
+		ds_list_clear(storyOrder);
+        storyBook[0, story.text] = "What's with the boxes?";
+		storyBook[0, story.choice1] = "I'm moving in?";
+		storyBook[0, story.choice2] = "I'm moving out?";
+		storyBook[0, story.path1] = 1;
+		storyBook[0, story.path2] = 0;
+		ds_list_add(storyOrder, 0);
 		
+		storyBook[1, story.text] = "Why is this receipt here?";
+		storyBook[1, story.choice1] = "I bought back my toy";
+		storyBook[1, story.choice2] = "I'm trying to get rid of my old interests!";
+		storyBook[1, story.path1] = 1;
+		storyBook[1, story.path2] = 0;
+		ds_list_add(storyOrder, 1);
 		
-        storyBook[12, story.text] = "What's with the boxes?";
-		storyBook[12, story.choice1] = "I'm moving in?";
-		storyBook[12, story.choice2] = "I'm moving out?";
-		storyBook[12, story.path1] = 1;
-		storyBook[12, story.path2] = 0;
-		ds_list_add(storyOrder, 12);
+		storyBook[2, story.text] = "Why am I leaving?";
+		storyBook[2, story.choice1] = "I'm trying to run away.";
+		storyBook[2, story.choice2] = "My dad want's me back.";
+		storyBook[2, story.path1] = 0;
+		storyBook[2, story.path2] = 1;
+		ds_list_add(storyOrder, 2);
 		
-		storyBook[13, story.text] = "Why is this receipt here?";
-		storyBook[13, story.choice1] = "I bought back my toy";
-		storyBook[13, story.choice2] = "I'm trying to get rid of my old interests!";
-		storyBook[13, story.path1] = 1;
-		storyBook[13, story.path2] = 0;
-		ds_list_add(storyOrder, 13);
+		storyBook[3, story.text] = "Where are we going?";
+		storyBook[3, story.choice1] = "I don't know. Anywhere but here";
+		storyBook[3, story.choice2] = "A new home. Hopefully a better life.";
+		storyBook[3, story.path1] = 0;
+		storyBook[3, story.path2] = 1;
+		ds_list_add(storyOrder, 3);
 		
-		storyBook[14, story.text] = "Why am I leaving?";
-		storyBook[14, story.choice1] = "I'm trying to run away.";
-		storyBook[14, story.choice2] = "My dad want's me back.";
-		storyBook[14, story.path1] = 0;
-		storyBook[14, story.path2] = 1;
-		ds_list_add(storyOrder, 14);
+		storyBook[4, story.text] = "How did I end up in this mindscape";
+		storyBook[4, story.choice1] = "I got into a car accident and I'm comatosed right now.";
+		storyBook[4, story.choice2] = "I blacked out from alcohol poioning.";
+		storyBook[4, story.path1] = 1;
+		storyBook[4, story.path2] = 0;
+		ds_list_add(storyOrder, 4);
 		
-		storyBook[15, story.text] = "Where are we going?";
-		storyBook[15, story.choice1] = "I don't know. Anywhere but here";
-		storyBook[15, story.choice2] = "A new home. Hopefully a better life.";
-		storyBook[15, story.path1] = 0;
-		storyBook[15, story.path2] = 1;
-		ds_list_add(storyOrder, 15);
+		storyBook[5, story.text] = "Who are you";
+		storyBook[5, story.choice1] = "The same stupid child that didn't know any better.";
+		storyBook[5, story.choice2] = "The same thing my parents were.";
+		storyBook[5, story.path1] = 1;
+		storyBook[5, story.path2] = 0;
+		ds_list_add(storyOrder, 5);
 		
-		storyBook[16, story.text] = "How did I end up in this mindscape";
-		storyBook[16, story.choice1] = "I got into a car accident and I'm comatosed right now.";
-		storyBook[16, story.choice2] = "I blacked out from alcohol poioning.";
-		storyBook[16, story.path1] = 1;
-		storyBook[16, story.path2] = 0;
-		ds_list_add(storyOrder, 16);
-		
-		storyBook[17, story.text] = "Who are you";
-		storyBook[17, story.choice1] = "The same stupid child that didn't know any better.";
-		storyBook[17, story.choice2] = "The same thing my parents were.";
-		storyBook[17, story.path1] = 1;
-		storyBook[17, story.path2] = 0;
-		ds_list_add(storyOrder, 17);
-		
-		storyBook[18, story.text] = "Do you want to wake up again?";
-		storyBook[18, story.choice1] = "No, let me be at peace at last.";
-		storyBook[18, story.choice2] = "Please give me one more chance.";
-		storyBook[18, story.path1] = 1;
-		storyBook[18, story.path2] = 0;
-		ds_list_add(storyOrder, 18);
+		storyBook[6, story.text] = "Do you want to wake up again?";
+		storyBook[6, story.choice1] = "No, let me be at peace at last.";
+		storyBook[6, story.choice2] = "Please give me one more chance.";
+		storyBook[6, story.path1] = 1;
+		storyBook[6, story.path2] = 0;
+		ds_list_add(storyOrder, 6);
 		
 		var inst_door = instance_create_depth(920, 600, -1, obj_interactable)
 		ds_list_add(objectList, inst_door);
