@@ -285,6 +285,117 @@ else if (room = rm_college){
 else if (room == rm_final) {
 	if (loadObjects) {
 		loadObjects = false;
+		audio_play_sound(snd_bgmusic, 1, true);
+		
+		
+		
+        storyBook[12, story.text] = "What's with the boxes?";
+		storyBook[12, story.choice1] = "I'm moving in?";
+		storyBook[12, story.choice2] = "I'm moving out?";
+		storyBook[12, story.path1] = 1;
+		storyBook[12, story.path2] = 0;
+		ds_list_add(storyOrder, 12);
+		
+		storyBook[13, story.text] = "Why is this receipt here?";
+		storyBook[13, story.choice1] = "I bought back my toy";
+		storyBook[13, story.choice2] = "I'm trying to get rid of my old interests!";
+		storyBook[13, story.path1] = 1;
+		storyBook[13, story.path2] = 0;
+		ds_list_add(storyOrder, 13);
+		
+		storyBook[14, story.text] = "Why am I leaving?";
+		storyBook[14, story.choice1] = "I'm trying to run away.";
+		storyBook[14, story.choice2] = "My dad want's me back.";
+		storyBook[14, story.path1] = 0;
+		storyBook[14, story.path2] = 1;
+		ds_list_add(storyOrder, 14);
+		
+		storyBook[15, story.text] = "Where are we going?";
+		storyBook[15, story.choice1] = "I don't know. Anywhere but here";
+		storyBook[15, story.choice2] = "A new home. Hopefully a better life.";
+		storyBook[15, story.path1] = 0;
+		storyBook[15, story.path2] = 1;
+		ds_list_add(storyOrder, 15);
+		
+		storyBook[16, story.text] = "How did I end up in this mindscape";
+		storyBook[16, story.choice1] = "I got into a car accident and I'm comatosed right now.";
+		storyBook[16, story.choice2] = "I blacked out from alcohol poioning.";
+		storyBook[16, story.path1] = 1;
+		storyBook[16, story.path2] = 0;
+		ds_list_add(storyOrder, 16);
+		
+		storyBook[17, story.text] = "Who are you";
+		storyBook[17, story.choice1] = "The same stupid child that didn't know any better.";
+		storyBook[17, story.choice2] = "The same thing my parents were.";
+		storyBook[17, story.path1] = 1;
+		storyBook[17, story.path2] = 0;
+		ds_list_add(storyOrder, 17);
+		
+		storyBook[18, story.text] = "Do you want to wake up again?";
+		storyBook[18, story.choice1] = "No, let me be at peace at last.";
+		storyBook[18, story.choice2] = "Please give me one more chance.";
+		storyBook[18, story.path1] = 1;
+		storyBook[18, story.path2] = 0;
+		ds_list_add(storyOrder, 18);
+		
+		var inst_door = instance_create_depth(920, 600, -1, obj_interactable)
+		ds_list_add(objectList, inst_door);
+		with (inst_door) {
+			objectID = 0;
+			dialog = "Press 'E' to rebuild memory.";
+			sprite = spr_door;
+			isDoor = true;
+			
+			//how to change sprite width and height do it here
+			image_xscale = 0.8;
+			image_yscale = 0.8;
+		}
+		
+		//receipt object
+		var inst_final_receipt= instance_create_depth(400, 400, -1, obj_interactable)
+		ds_list_add(objectList, inst_final_receipt);
+		with (inst_final_receipt) {
+			objectID = 1;
+			dialog = "You find a receipt for the sale of an assortment of records,\nseveral poster, and a heavy lockable chest.";
+			sprite = spr_receipt;
+		}
+		
+		var inst_final_newspaper = instance_create_depth(712, 604, -1, obj_interactable)
+		ds_list_add(objectList, inst_final_newspaper);
+		with (inst_final_newspaper){
+			objectID = 2;
+			dialog = "Sheets of newspapers have been layed across the floor\n as a door mat. The headlines on one of them reads\n'Housing bubble bursts. Real estate market completely frozen'";
+			sprite = spr_news;
+		}
+		
+		var inst_final_window = instance_create_depth(133, 477, -1, obj_interactable)
+		ds_list_add(objectList, inst_final_window);
+		with (inst_final_window){
+			objectID = 3;
+			dialog = "Everything outside the window is very hazy.\nYes a senseless hectic haze. All you manage to make out is the discernible flashing of an ambulance's sirens\nand a bawling women looking in on the window";
+			sprite = spr_dialog;
+		}
+		var inst_final_bed = instance_create_depth(727, 233, -1, obj_interactable)
+		ds_list_add(objectList, inst_final_bed);
+		with (inst_final_bed){
+			objectID = 4;
+			dialog = "You look under the bed. Beneath you find\na vast assortment of discarded beer bottles and aluminum cans\nYou can't see anybody on it, but you feel a very familiar presence as if it was lying right on the bed."
+			sprite = spr_bed;
+		}
+		var inst_final_drawer = instance_create_depth(616, 817, -1, obj_interactable)
+		ds_list_add(objectList, inst_final_drawer);
+		with (inst_final_drawer){
+			objectID = 5;
+			dialog = "You pull open the dresser. Inside you find a pile of crumbled up papers. Some of these are crudely drawn drawings\nthe rest though, are very old photographs falling out of old torn albums. These are undeniably more damaged than\nany you've ever seen"
+			sprite = spr_news;
+		}
+		var inst_final_hole = instance_create_depth(640, 129, -1, obj_interactable)
+		ds_list_add(objectList, inst_final_hole);
+		with (inst_final_hole){
+			objectID = 6;
+			dialog = "There's a blank paper hanging on the wall.\nYou lift it up to find the hole still there, as enraged as ever."
+			sprite = spr_news;
+		}
 	}
 	
 	//Final room is different do time logic, end game if out of time.
