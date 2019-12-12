@@ -3,7 +3,7 @@ if (room == rm_test) {
 		loadObjects = false;
 		audio_play_sound(snd_bgmusic, 1, true);
 		
-		//craete story elements
+		//create story elements
 		storyBook[0, story.text] = "Who are you?";
 		storyBook[0, story.choice1] = "A child.";
 		storyBook[0, story.choice2] = "A parent.";
@@ -84,7 +84,7 @@ if (room == rm_test) {
 			dialog = "There's nothing under the bed. That's a bit dissapointing\nbut you are inexplicably relieved that there are no monsters under it"
 			sprite = spr_bed;
 		}
-		var inst_drawer = instance_create_depth(616, 834, -1, obj_interactable)
+		var inst_drawer = instance_create_depth(616, 817, -1, obj_interactable)
 		ds_list_add(objectList, inst_drawer);
 		with (inst_drawer){
 			objectID = 5;
