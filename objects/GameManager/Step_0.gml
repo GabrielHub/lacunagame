@@ -84,6 +84,20 @@ if (room == rm_test) {
 			dialog = "There's nothing under the bed. That's a bit dissapointing\nbut you are inexplicably relieved that there are no monsters under it"
 			sprite = spr_bed;
 		}
+		var inst_drawer = instance_create_depth(616, 834, -1, obj_interactable)
+		ds_list_add(objectList, inst_drawer);
+		with (inst_drawer){
+			objectID = 5;
+			dialog = "You pull open the dresser. Inside you find a pile of crumbled up papers. Some of these are crudely drawn drawings\nthe rest though, are old photographs. You can't seem to recall what they depicted, but they seem too important\nto just leave like this."
+			sprite = spr_news;
+		}
+		var inst_drawing = instance_create_depth(640, 129, -1, obj_interactable)
+		ds_list_add(objectList, inst_drawing);
+		with (inst_drawing){
+			objectID = 6;
+			dialog = "There's a drawing hanging on the wall. As far as you can discern from the picture, it's a man in a construction hat\nholding hands with a smaller figure with a paint brush\nit's no masterpiece, but deep down, you kinda feel proud of it."
+			sprite = spr_news;
+		}
 	}
 }
 else if (room = rm_teen){
