@@ -104,30 +104,30 @@ else if (room = rm_teen){
     if (loadObjects) {
         loadObjects = false;
         audio_play_sound(snd_bgmusic, 1, true);
-        storyBook[4, story.text] = "What are we doing back here?";
-        storyBook[4, story.choice1] = "We didn’t move out after all?";
-        storyBook[4, story.choice2] = "Parents divorced?";
-        storyBook[4, story.path1] = 1;
-        storyBook[4, story.path2] = 0;
-        ds_list_add(storyOrder, 4);
-        storyBook[5, story.text] = "What's special about today?";
-        storyBook[5, story.choice1] = "Birthday?";
-        storyBook[5, story.choice2] = "Christmas?";
-        storyBook[5, story.path1] = 1;
-        storyBook[5, story.path2] = 0;
-        ds_list_add(storyOrder, 5);
-        storyBook[6, story.text] = "Who's the letter from?";
-        storyBook[6, story.choice1] = "Older Brother?";
-        storyBook[6, story.choice2] = "Younger Sister?";
-        storyBook[6, story.path1] = 0;
-        storyBook[6, story.path2] = 1;
-        ds_list_add(storyOrder, 6);
-        storyBook[7, story.text] = "What do you see yourself as?";
-        storyBook[7, story.choice1] = "A wistful child";
-        storyBook[7, story.choice2] = "A wisened adult";
-        storyBook[7, story.path1] = 0;
-        storyBook[7, story.path2] = 1;
-        ds_list_add(storyOrder, 7);
+        storyBook[0, story.text] = "What are we doing back here?";
+        storyBook[0, story.choice1] = "We didn’t move out after all?";
+        storyBook[0, story.choice2] = "Parents divorced?";
+        storyBook[0, story.path1] = 1;
+        storyBook[0, story.path2] = 0;
+        ds_list_add(storyOrder, 0);
+        storyBook[1, story.text] = "What's special about today?";
+        storyBook[1, story.choice1] = "Birthday?";
+        storyBook[1, story.choice2] = "Christmas?";
+        storyBook[1, story.path1] = 1;
+        storyBook[1, story.path2] = 0;
+        ds_list_add(storyOrder, 1);
+        storyBook[2, story.text] = "Who's the letter from?";
+        storyBook[2, story.choice1] = "Older Brother?";
+        storyBook[2, story.choice2] = "Younger Sister?";
+        storyBook[2, story.path1] = 0;
+        storyBook[2, story.path2] = 1;
+        ds_list_add(storyOrder, 2);
+        storyBook[3, story.text] = "What do you see yourself as?";
+        storyBook[3, story.choice1] = "A wistful child";
+        storyBook[3, story.choice2] = "A wisened adult";
+        storyBook[3, story.path1] = 0;
+        storyBook[3, story.path2] = 1;
+        ds_list_add(storyOrder, 3);
         var inst_door = instance_create_depth(920, 600, -1, obj_interactable)
         ds_list_add(objectList, inst_door);
         with (inst_door) {
@@ -195,30 +195,30 @@ else if (room = rm_college){
     if (loadObjects) {
         loadObjects = false;
         audio_play_sound(snd_bgmusic, 1, true);
-        storyBook[8, story.text] = "Why aren’t you in school?";
-        storyBook[8, story.choice1] = "I chose another path";
-        storyBook[8, story.choice2] = "I am. Just not the one I wanted";
-        storyBook[8, story.path1] = 1;
-        storyBook[8, story.path2] = 0;
-        ds_list_add(storyOrder, 8);
-        storyBook[9, story.text] = "Where's your brother?";
-        storyBook[9, story.choice1] = "He's out of state at college";
-        storyBook[9, story.choice2] = "He's on a date with his girlfriend";
-        storyBook[9, story.path1] = 0;
-        storyBook[9, story.path2] = 1;
-        ds_list_add(storyOrder, 9);
-        storyBook[10, story.text] = "How do you feel about your memories?";
-        storyBook[10, story.choice1] = "Fondly";
-        storyBook[10, story.choice2] = "Disdainfully";
-        storyBook[10, story.path1] = 1;
-        storyBook[10, story.path2] = 0;
-        ds_list_add(storyOrder, 10);
-        storyBook[11, story.text] = "How have you been dealing with your feelings";
-        storyBook[11, story.choice1] = "Sorrowfully";
-        storyBook[11, story.choice2] = "Violentlly";
-        storyBook[11, story.path1] = 1;
-        storyBook[11, story.path2] = 0;
-        ds_list_add(storyOrder, 11);
+        storyBook[0, story.text] = "Why aren’t you in school?";
+        storyBook[0, story.choice1] = "I chose another path";
+        storyBook[0, story.choice2] = "I am. Just not the one I wanted";
+        storyBook[0, story.path1] = 1;
+        storyBook[0, story.path2] = 0;
+        ds_list_add(storyOrder, 0);
+        storyBook[1, story.text] = "Where's your brother?";
+        storyBook[1, story.choice1] = "He's out of state at college";
+        storyBook[1, story.choice2] = "He's on a date with his girlfriend";
+        storyBook[1, story.path1] = 0;
+        storyBook[1, story.path2] = 1;
+        ds_list_add(storyOrder, 1);
+        storyBook[2, story.text] = "How do you feel about your memories?";
+        storyBook[2, story.choice1] = "Fondly";
+        storyBook[2, story.choice2] = "Disdainfully";
+        storyBook[2, story.path1] = 1;
+        storyBook[2, story.path2] = 0;
+        ds_list_add(storyOrder, 2);
+        storyBook[3, story.text] = "How have you been dealing with your feelings";
+        storyBook[3, story.choice1] = "Sorrowfully";
+        storyBook[3, story.choice2] = "Violentlly";
+        storyBook[3, story.path1] = 1;
+        storyBook[3, story.path2] = 0;
+        ds_list_add(storyOrder, 3);
         var inst_door = instance_create_depth(920, 600, -1, obj_interactable)
         ds_list_add(objectList, inst_door);
         with (inst_door) {
@@ -263,7 +263,7 @@ else if (room = rm_college){
         ds_list_add(objectList, inst_admission);
         with (inst_admission) {
             objectID = 4;
-            dialog = "There were a pile of letter on the desk\nOpening one up you see that it's a college admissions letter, and\nyou've been accepted! It's in L.A. too, how exciting!";
+            dialog = "There were a pile of letters on the desk\nOpening one up you see that it's a college admissions letter, and\nyou've been accepted! It's in L.A. too, how exciting!";
             sprite = spr_receipt;
         }
         var inst_collegeWindow = instance_create_depth(400, 400, -1, obj_interactable)
