@@ -66,7 +66,7 @@ if (room == rm_test) {
 		ds_list_add(objectList, inst_newspaper);
 		with (inst_newspaper){
 			objectID = 2;
-			dialog = "Sheets of newspapers have been layed across the floor\n as a door mat. The headlines on one of them reads\n'Man walks in space's";
+			dialog = "Sheets of newspapers have been layed across the floor\n as a door mat. The headlines on one of them reads\n'Man walks in space'";
 			sprite = spr_news;
 		}
 		
