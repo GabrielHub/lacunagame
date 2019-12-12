@@ -21,7 +21,10 @@ else {
 	//when room is final, clear the room and blur the background so text can go over the screen
 	var lay_id = layer_get_id("Background");
 	var back_id = layer_background_get_id(lay_id);
-	layer_background_index(back_id, 1);
-	
-	//instance_destroy(obj_player);
+	if (GameManager.gameWon == 0) {
+		layer_background_index(back_id, 1);
+	}
+	else {
+		layer_background_index(back_id, 2);
+	}
 }

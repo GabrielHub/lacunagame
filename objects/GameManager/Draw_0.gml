@@ -11,13 +11,14 @@ if (room == rm_final) {
 	
 	//Means gameover state
 	if (gameWon != -1) {
-		if (gameWon == 0) {
+		if (gameWon == 1) {
+			GoToNextLevel();
 			draw_set_halign(fa_center);
 			draw_text_ext(room_width / 2 - margin, room_height / 2 - margin, "You remember everything, and wake up from your coma.", -1, width);
 		}
-		else if (gameWon == 1) {
+		else if (gameWon == 0) {
 			draw_set_halign(fa_center);
-			draw_text_ext(room_width / 2 - margin, room_height / 2 - margin, "You fail to remember enough to awaken from your coma.", -1, width);
+			draw_text_ext(room_width / 2 - margin, room_height / 2 - margin, "You fail to remember enough to awaken from your coma.\nPress 'R' to try again from the start.", -1, width);
 		}
 	}
 }

@@ -103,6 +103,14 @@
             }
         },
         {
+            "Key": "472fce85-5e07-49ed-b786-4db3b68cb362",
+            "Value": {
+                "id": "76938053-ffcf-4a43-8078-ede93dd1144a",
+                "resourcePath": "sprites\\spr_bgend\\spr_bgend.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "4850d5d3-3fe6-428a-b810-79b8d2230ba7",
             "Value": {
                 "id": "b5538855-f892-45b5-b1f6-03601323fd0e",

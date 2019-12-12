@@ -405,5 +405,8 @@ else if (room == rm_final) {
 	}
 	if (finalLevelTime <= 0) {
 		gameWon = 0;
+		if (keyboard_check_pressed(ord("R"))) {
+			game_restart();
+		}
 	}
 }
